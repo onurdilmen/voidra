@@ -1,0 +1,59 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "jsx": "react-jsx",
+        "moduleResolution": "bundler",
+        "lib": [
+            "ES2022",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "declaration": true,
+        "sourceMap": true,
+        "types": [
+            "node"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@core/*": [
+                "src/core/*"
+            ],
+            "@managers/*": [
+                "src/managers/*"
+            ],
+            "@models/*": [
+                "src/models/*"
+            ],
+            "@utils/*": [
+                "src/utils/*"
+            ],
+            "@automation/*": [
+                "src/automation/*"
+            ],
+            "@scripts/*": [
+                "src/scripts/*"
+            ],
+            "@renderer/*": [
+                "src/renderer/src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+        "electron.vite.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "out",
+        "dist",
+        "release",
+        "data",
+        "browser_data"
+    ]
+}

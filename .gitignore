@@ -1,0 +1,69 @@
+# ═══════════════════════════════════════════════════════════════
+# VOIDRA — .gitignore
+# ═══════════════════════════════════════════════════════════════
+
+# ─── Node.js ──────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Build Çıktıları ─────────────────────────────────────────
+out/
+dist/
+*.exe
+*.dmg
+*.AppImage
+*.snap
+*.deb
+*.rpm
+*.msi
+
+# ─── Electron Builder ────────────────────────────────────────
+release/
+build/
+
+# ─── Vite ─────────────────────────────────────────────────────
+*.local
+
+# ─── TypeScript ───────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── IDE / Editor ─────────────────────────────────────────────
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── OS Dosyaları ─────────────────────────────────────────────
+desktop.ini
+ehthumbs.db
+
+# ─── VOIDRA Uygulama Verileri ─────────────────────────────────
+# Config dosyaları (kullanıcı bilgileri içerebilir)
+data/
+logs/
+
+# ─── Tarayıcı Profilleri (Hassas Veri) ────────────────────────
+profiles/
+browser-profiles/
+
+# ─── Geçici Dosyalar ──────────────────────────────────────────
+*.tmp
+*.temp
+.cache/
+
+# ─── Ortam Değişkenleri ──────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── Gemini/Agent Dizini ──────────────────────────────────────
+.gemini/
+.agent/
